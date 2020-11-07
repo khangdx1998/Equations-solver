@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <div align="center">
+        <title>Final Project</title>
+    </div>
+    <style>
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
+      "HTML-CSS": {
+        linebreaks: { automatic: true, width: "container" }          
+      }              
+   });
+</script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('https://kiwicollegeprep.com/wp-content/uploads/2019/08/mathematics-1509559_1920-1200x710.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+    <p>\
+    <nav>
+    </nav>
+    </p>
+    <div align="center" style="background:rgb(238, 230, 238); width: 900px; height: 2000px; margin: 0 auto">
+        <strong>
+            <nav>
+                <h1>Handwritten S.O.E Solver!!!</h1>
+            </nav>
+        </strong>
+        <form method="post" action="/" enctype="multipart/form-data">
+            <dl>
+                <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+                <p><input type="file" name="file" autocomplete="off" required></p>
+                <p><img id="output" width="200" /></p>
+            </dl>
+            <p>
+                <input type="submit" value="SOLVE">
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        {% if original_image  %}<th>Upload Image</th>{% endif %}
+
+                        {% if cropped_image %}<th>Cropped Image</th>{% endif %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {% if original_image %}<td><img style= "width: 400px; height = 400px" src="{{original_image}}""></td>{% endif %}
+                        {% if cropped_image %}<td><img style= "width: 400px; height=400px" src="{{cropped_image}}">
+                        </td>{% endif %}
+                    </tr>
+                    <tr> <td><div><nav></nav></div></td></tr>
+                    <tr>
+                
+                        <td>
+                            <div style="float:right">
+                                {% if text %} 
+                                <b>DETECTED TEXT IS:</b>
+                                {% for line in text %}
+                                <p>
+                                  {{line|safe}}
+                                  </p>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                        </td>
+                    
+                        <td>
+                            <div style="float:left; margin: 0px 0px 0px 50px">
+                                {% if result %}
+                                <b>RESULTS:</b>
+                                {% for var in result %}
+                                <p>{{var|safe}} </p>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            <div style="width:900px; height:400px; float:left">
+                <hr>
+                <p align='left'> <strong>>>Contributors:</strong></p>
+                <ul style="width:150px; height:400px; float:left">
+                    <li><a href="https://www.facebook.com/profile.php?id=100009573802805">Doan Xuan Khang</a></li>
+                    <li><a href="https://www.facebook.com/ducthangbka8">Nguyen Duc Thang</a></li>
+                    <li><a href="https://www.facebook.com/phgnam1811/">Dang Phuong Nam</a></li>
+                </ul>
+            </div>
+        </form>
+
+
+    </div>
+
+    <footer>
+
+        <p style="color: red; text-align: center;">AI4E &copy;</p>
+    </footer>
+</body>
+
+</html>
+
+<!-- <script>
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script> -->
