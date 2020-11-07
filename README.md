@@ -11,4 +11,6 @@
   - Sửa GPU = 0 thành GPU = 1
   - Sửa OPENCV =0 thành OPENCV = 1
 ## 3. Chạy chương trình trên Google Colab và Flask
-- Clone repository : !git clone 
+- Clone repository : !git clone https://github.com/khangdx1998/Equations-solver.git
+- Upload folder weights và darknet lên google drive
+
