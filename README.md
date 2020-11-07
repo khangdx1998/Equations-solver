@@ -15,6 +15,6 @@
 - Upload folder weights và darknet lên google drive
 - Chạy file demo.ipynb 
 
-![Result 1] (/result/1.png)
+![Result 1] (result/1.png)
 
 
