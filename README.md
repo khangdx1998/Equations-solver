@@ -14,7 +14,8 @@
 - Clone repository : !git clone https://github.com/khangdx1998/Equations-solver.git
 - Upload folder weights và darknet lên google drive
 - Chạy file demo.ipynb 
-
-![Result 1] (result/1.png)
+## 4. Kết quả
+![](result/1.png)
+![](result/2.png)
 
 
