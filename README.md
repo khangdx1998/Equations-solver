@@ -13,4 +13,6 @@
 ## 3. Chạy chương trình trên Google Colab và Flask
 - Clone repository : !git clone https://github.com/khangdx1998/Equations-solver.git
 - Upload folder weights và darknet lên google drive
+- Chạy file demo.ipynb 
+
 
