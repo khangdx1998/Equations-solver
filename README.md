@@ -10,4 +10,5 @@
 - Trong file Makefile trong thư mục darknet :
   - Sửa GPU = 0 thành GPU = 1
   - Sửa OPENCV =0 thành OPENCV = 1
-## 3. 
+## 3. Chạy chương trình trên Google Colab và Flask
+- Clone repository : !git clone 
