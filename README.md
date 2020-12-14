@@ -16,6 +16,6 @@
 - Chạy file demo.ipynb 
 ## 4. Kết quả
 ![](result/1.png)
-![](result/2.png)
+
 
 
